@@ -35,18 +35,23 @@ Para o backend escolhemos o Spring framework, o motivo da escolha foi feita pois
 <p>
 Neste projeto eu atuei como Product Owner (PO) e também tive contribuições mais focadas no front-end, foi sugerido por outro membro da equipe que utilizássemos o framework Vue.js
 </p>
+<h3>Método de subida de documento</h3>
+<p>Esse método foi criado para fazer o upload do arquivo xlsx que contém as LEPs (List of Effective Pages) existentes para ser armazenado e admnistrado por dentro da nossa plataforma, com ele é feito um post do arquivo para o nosso backend onde é feita a leitura do xlsx e salvo todas as informações no nosso banco de dados</p>
 <details>
-    <summary>Método de subida de documento</summary>
+    <summary>Ver mais</summary>
     <img src="carbon.png">
 </details>
-<br>
+<p></p>
+<h3>Método de busca de documentos</h3>
+<p>Esse método foi criado pois houve uma necessidade de listar para o cliente parceiro todos os documentos salvos dentro de nossa plataforma, para trazer essas informações é feito uma requisição GET pro nosso endpoint para então conseguirmos a lista que será retornada pro usuário final</p>
 <details>
-    <summary>Método de busca de documentos</summary>
+    <summary>Ver mais</summary>
     <img src="searchDocs.png">
 </details>
-<br>
+<h3>Método de Download de documentos</h3>
+<p>Esse método foi criado com a finalidade de resolver a necessidade do nosso cliente parceiro conseguir gerar um arquivo pdf da LEP escolhida para que assim o mesmo possa ser visualizado e utilizado fora de nossa aplicação, nele fazemos uma chamada para  o endpoint de download onde recebemos o ArrayBuffer dos dados da versão final do documento e transformado em pdf para que o cliente final consiga fazer o download</p>
 <details>
-    <summary>Método de Download de documentos</summary>
+    <summary>Ver mais</summary>
     <img src="downloadDocs.png">
 </details>
 
